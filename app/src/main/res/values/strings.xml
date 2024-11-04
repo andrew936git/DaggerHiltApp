@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DaggerHiltApp</string>
+    <string name="textViewText">Валюты мира</string>
+</resources>

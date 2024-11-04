@@ -5,14 +5,14 @@ import javax.inject.Inject
 class CurrencyRepositoryImpl @Inject constructor() : CurrencyRepository {
     override fun getCurrencies(): List<Currency> {
         return listOf(
-            Currency("USD", R.drawable.dolar),
-            Currency("EUR", R.drawable.euro),
-            Currency("JPY", R.drawable.jpy),
-            Currency("JPY", R.drawable.cny),
-            Currency("JPY", R.drawable.rup),
-            Currency("JPY", R.drawable.rub),
-            Currency("JPY", R.drawable.gbp),
-            Currency("JPY", R.drawable.viethnam_dong),
+            Currency("Доллар", R.drawable.dolar),
+            Currency("Евро", R.drawable.euro),
+            Currency("Йена", R.drawable.jpy),
+            Currency("Юань", R.drawable.cny),
+            Currency("Рупий", R.drawable.rup),
+            Currency("Рубль", R.drawable.rub),
+            Currency("Фунт Стерлингов", R.drawable.gbp),
+            Currency("Вьетнамский донг", R.drawable.viethnam_dong),
         )
     }
 }

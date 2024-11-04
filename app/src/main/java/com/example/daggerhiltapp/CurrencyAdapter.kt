@@ -12,6 +12,7 @@ class CurrencyAdapter : RecyclerView.Adapter<CurrencyAdapter.CurrencyViewHolder>
 
     private val items = mutableListOf<Currency>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setItems(currencies: List<Currency>) {
         items.clear()
         items.addAll(currencies)

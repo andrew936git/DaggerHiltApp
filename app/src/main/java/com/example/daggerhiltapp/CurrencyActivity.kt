@@ -25,10 +25,9 @@ class CurrencyActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        currencyAdapter = CurrencyAdapter()
-        binding.recyclerView
-        binding.recyclerView.adapter = currencyAdapter
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        currencyAdapter = CurrencyAdapter()
+        binding.recyclerView.adapter = currencyAdapter
 
         viewModel.currencies.observe(this) { currencies ->
             currencyAdapter.setItems(currencies)

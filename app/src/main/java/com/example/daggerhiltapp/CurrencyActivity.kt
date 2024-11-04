@@ -25,6 +25,8 @@ class CurrencyActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        title = "Валюты мира"
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         currencyAdapter = CurrencyAdapter()
         binding.recyclerView.adapter = currencyAdapter
